@@ -55,9 +55,11 @@ public class SaveToDB {
             connection.rollback();
             ex.printStackTrace();
         }finally {
-            connection.commit();
-            connection.setAutoCommit(true);
-            connection.close();
+            if(connection != null) {
+                connection.commit();
+                connection.setAutoCommit(true);
+                connection.close();
+            }
         }
     }
 }

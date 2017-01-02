@@ -40,17 +40,6 @@ public class JavaFXView extends Application implements Observer{
     protected double[][] landscape;
     protected double[][] tankCoords;
 
-    /*public void startJavaFX(String[] args, int tankQ) {
-        if (tankQ > fieldWidth/(tankWidth*3)){//redundant
-            System.out.println("Too many tanks");
-            return;
-        }
-        tankQuantity = 5;
-        instance = BattleField.getInstance(fieldWidth, fieldHeight,tankWidth);
-        launch(args);
-
-    }*/
-
     @Override
     public void start(Stage primaryStage) throws Exception {
 

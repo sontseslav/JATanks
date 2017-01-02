@@ -43,11 +43,11 @@ public class BattleField /*<T extends Tank>*/ {
 
     public BattleField(){}
 
-    public int getFildSizeHorizontal() {
+    public int getFieldSizeHorizontal() {
         return fildSizeHorizontal;
     }
 
-    public int getFildSizeVertical() {
+    public int getFieldSizeVertical() {
         return fildSizeVertical;
     }
 

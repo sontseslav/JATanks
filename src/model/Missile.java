@@ -63,8 +63,8 @@ public abstract class Missile {
                 if ((int)y == (int)(instance.getLandscape()[x][1])
                         || (int)y == (int)(instance.getLandscape()[x][1])+1
                         || (int)y == (int)(instance.getLandscape()[x][1])-1
-                        || x == instance.getFildSizeHorizontal()-1 || y == 0
-                        || y >= instance.getFildSizeVertical()-1){
+                        || x == instance.getFieldSizeHorizontal()-1 || y == 0
+                        || y >= instance.getFieldSizeVertical()-1){
                     System.out.printf("Angle=%.3f speed=%.3f posX=%s posY=%.3f hposX=%.3f hposY=%.3f X=%s Y=%.3f%n",
                             angle,initSpeed,posX,posY,heightPosX,heightPosY,x,y);
                     flyMissile(flyPath, imposedArea);
@@ -78,7 +78,7 @@ public abstract class Missile {
                         || (int)y == (int)(instance.getLandscape()[x][1])+1
                         || (int)y == (int)(instance.getLandscape()[x][1])-1
                         || x == 0 || y == 0
-                        || y >= instance.getFildSizeVertical()-1){
+                        || y >= instance.getFieldSizeVertical()-1){
                     System.out.printf("Angle=%.3f speed=%.3f posX=%s posY=%.3f hposX=%.3f hposY=%.3f X=%s Y=%.3f%n",
                             angle,initSpeed,posX,posY,heightPosX,heightPosY,x,y);
                     flyMissile(flyPath, imposedArea);
